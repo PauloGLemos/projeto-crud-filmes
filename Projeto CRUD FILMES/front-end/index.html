@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./01.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>My Movies</title>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <nav>
+        <h1>My favorite Movies</h1>
+      </nav>
+      <div class="content">
+        <div class="div1">
+
+          <!-- Textbox 1 -->
+          <p class="p1">
+            <label for="name" >Name:</label>
+            <br /><input type="text" id="name" placeholder="type the movie name" required>
+          </p>
+
+          <!-- Textbox 2 -->
+          <p class="p1">
+            <label for="image" >Image:</label>
+            <br /><input type="text" id="image" placeholder="add an image" required>
+          </p>
+
+          <!-- Textbox 3 -->
+          <p class="p1"> 
+            <br><label for="genre">Genre:</label></br>
+              <select name="movies" id="genre" required>
+                <option value="Action">Other</option>
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Sci-fi">Sci-fi</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Romance">Romance</option>
+              </select>
+          </p>
+
+          <!-- Textbox 4 -->
+          <p class="p1"> 
+            <br><label for="watch">Have you Watched?</label></br>
+              <select id="watch" required>
+                <option value="---">---</option>
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+              </select>
+          </p>
+
+          <!-- Textbox 5 -->
+          <p class="p1">
+            <label for="score">Score:</label>
+            <br /><input type="number" id="score" min="0" max="10" placeholder="Score 0 to 10" required="required">
+          </p>
+        </div>
+
+        <!-- Botão -->
+          <button onclick="postMovie(event)" type="submit">Submit</button>
+
+        <!-- Footer -->
+      </div>
+      <footer>Developed by Paulo Gabriel</footer>
+    </div>
+
+    <div class="CardDiv" id="lista">
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>  
+    <script src="index.js"></script>
+  </body>
+</html>
