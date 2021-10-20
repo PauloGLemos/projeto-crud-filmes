@@ -17,32 +17,33 @@
           <!-- Textbox 1 -->
           <p class="p1">
             <label for="name" >Name:</label>
-            <br /><input type="text" id="name" placeholder="type the movie name" required>
+            <br /><input type="text" id="name" placeholder="type the movie name" >
           </p>
 
           <!-- Textbox 2 -->
           <p class="p1">
             <label for="image" >Image:</label>
-            <br /><input type="text" id="image" placeholder="add an image" required>
+            <br /><input type="text" id="image" placeholder="add an image" >
           </p>
 
           <!-- Textbox 3 -->
           <p class="p1"> 
             <br><label for="genre">Genre:</label></br>
-              <select name="movies" id="genre" required>
-                <option value="Action">Other</option>
+              <select name="movies" id="genre" >
+                <option value="---">---</option>
                 <option value="Action">Action</option>
                 <option value="Adventure">Adventure</option>
                 <option value="Sci-fi">Sci-fi</option>
                 <option value="Comedy">Comedy</option>
                 <option value="Romance">Romance</option>
+                <option value="Action">Other</option>
               </select>
           </p>
 
           <!-- Textbox 4 -->
           <p class="p1"> 
             <br><label for="watch">Have you Watched?</label></br>
-              <select id="watch" required>
+              <select id="watch" >
                 <option value="---">---</option>
                 <option value="yes">yes</option>
                 <option value="no">no</option>
@@ -52,12 +53,12 @@
           <!-- Textbox 5 -->
           <p class="p1">
             <label for="score">Score:</label>
-            <br /><input type="number" id="score" min="0" max="10" placeholder="Score 0 to 10" required="required">
+            <br /><input type="number" id="score" min="0" max="10" placeholder="Score 0 to 10">
           </p>
         </div>
 
         <!-- Botão -->
-          <button onclick="postMovie(event)" type="submit">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
 
         <!-- Footer -->
       </div>
